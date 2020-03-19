@@ -1,0 +1,45 @@
+_______________________________________________________________________
+GET - http://localhost/OefRestApi/api/taken/get.php
+
+_______________________________________________________________________
+GET - http://localhost/OefRestApi/api/taken/getSingle.php?id=3
+_______________________________________________________________________
+POST - http://localhost/OefRestApi/api/taken/post.php
+
+Headers
+ - key = Content-Type
+ - Value = application/json
+
+Body
+ - raw
+{
+    "taa_datum": "2020-03-19",
+    "taa_omschr": "post post post"
+}
+_______________________________________________________________________
+PUT - http://localhost/OefRestApi/api/taken/put.php
+
+Headers
+ - key = Content-Type
+ - Value = application/json
+
+Body
+ - raw
+{
+    "taa_id": "4",
+    "taa_datum": "2020-03-19",
+    "taa_omschr": "put put put"
+}
+_______________________________________________________________________
+
+DELETE - http://localhost/OefRestApi/api/taken/delete.php
+
+Headers
+ - key = Content-Type
+ - Value = application/json
+
+Body
+ - raw
+{
+    "taa_id": "4",
+}
